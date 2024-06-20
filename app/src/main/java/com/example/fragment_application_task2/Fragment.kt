@@ -43,8 +43,6 @@ class Fragment : Fragment(), ActivityInterface {
         binding?.btnchange?.setOnClickListener {
             mainActivity?.changeActivity(binding?.etvalue?.text.toString()?:"")
         }
-
-
     }
 
     override fun onCreateView(
@@ -78,6 +76,5 @@ class Fragment : Fragment(), ActivityInterface {
     }
     override fun changeFrafment() {
         binding?.etvalue?.setText("Change Activity")
-
     }
 }
