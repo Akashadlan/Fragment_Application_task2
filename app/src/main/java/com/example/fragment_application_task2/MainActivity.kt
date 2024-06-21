@@ -21,10 +21,14 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         binding?.btnchangeFragment?.setOnClickListener {
-            activityInterface?.changeFrafment()
+            if (binding?.etentervalue?.text?.toString()?.isNullOrEmpty() == true) {
+                binding?.etentervalue?.error = resources.getString(R.string.values)
+            } else {
+                activityInterface?.changeFragmentText("${binding?.etentervalue?.text?.toString()}")
+            }
         }
     }
-    fun changeActivity(s: String) {
-        binding?.btnchangeFragment?.setText("This is Changed From Fragment")
+    fun changeActivity(string : String) {
+        binding?.btnchangeFragment?.setText(string.toString())
     }
 }

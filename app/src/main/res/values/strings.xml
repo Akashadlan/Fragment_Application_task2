@@ -6,4 +6,6 @@
     <string name="fragment">Fragment Change</string>
     <string name="date">date</string>
     <string name="time">time</string>
+    <string name="value">value</string>
+    <string name="values">enter value</string>
 </resources>

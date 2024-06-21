@@ -19,6 +19,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
+    <EditText
+        android:id="@+id/etentervalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/values"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnchangeFragment"/>
+
 
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
